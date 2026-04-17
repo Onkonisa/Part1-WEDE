@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Enquiry - Ubuntu Threads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="product.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Enquiry</h1>
+    <p>If you have a question about an order, custom orders, or wholesale, send us a message below.</p>
+
+    <!-- Simple contact form (static prototype). To make this functional,
+         replace action with a server endpoint or integrate with a service like Formspree. -->
+    <form method="post" action="#">
+      <label for="name">Full name</label><br>
+      <input id="name" name="name" required><br><br>
+
+      <label for="email">Email</label><br>
+      <input id="email" type="email" name="email" required><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+      <button type="submit">Send Enquiry</button>
+    </form>
+
+    <!-- Notes for maintainers:
+         - For production, add CSRF protection and server-side validation.
+         - Integrate with local South African SMS or email providers if needed.
+    -->
+  </main>
+</body>
+</html>
